@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple UI</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header Styles */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        
+        /* Content Styles */
+        .content {
+            padding: 20px;
+        }
+        
+        /* Card Styles */
+        .card {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Button Styles */
+        .button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Button Hover Styles */
+        .button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Simple UI</h1>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Card 1 -->
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>This is a sample card.</p>
+                <button class="button">Learn More</button>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>This is another sample card.</p>
+                <button class="button">Learn More</button>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>This is yet another sample card.</p>
+                <button class="button">Learn More</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get all button elements
+        const buttons = document.querySelectorAll('.button');
+        
+        // Add event listener to each button
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Display a simple alert message
+                alert('You clicked a button!');
+            });
+        });
+    </script>
+</body>
+</html>
